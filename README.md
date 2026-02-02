@@ -25,26 +25,6 @@ Cada problema é classificado como:
 - **WARNING** – atenção recomendada
 - **CRITICAL** – erro grave que pode invalidar análises
 
----
-
-## 📦 Estrutura do pacote
-
-autoWrangler/
-│
-├── R/
-│ ├── run_wrangling.R
-│ ├── load_data.R
-│ ├── analyze_columns.R
-│ └── severity.R
-│
-├── inst/
-│ └── extdata/
-│ └── example.csv
-│
-├── DESCRIPTION
-├── NAMESPACE
-└── README.md
-
 
 ## 🔧 Instalação (local)
 
@@ -81,28 +61,12 @@ run_wrangling(
 
 -> Ideal para pipelines de produção.
 
-
-## 🧠 Tipos de erros detectados:
-
-column              issue                   severity
------------------------------------------------------
-productcode     Numérico contaminado         CRITICAL
-device.information    Alta cardinalidade     WARNING
-
-
 ## 📌 Boas práticas:
 
 ❌ Nunca use source() em arquivos .csv
 ✅ CSVs devem ser passados como caminho de arquivo
 ✅ Use ignored_columns para ajustes manuais
 ✅ Use stop_on_critical = TRUE em produção
-
-
-
-
-
-
-
 
 
 
