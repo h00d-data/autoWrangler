@@ -84,9 +84,9 @@ run_wrangling(
 
 ## 🧠 Tipos de erros detectados:
 
-column                issue                  severity
+column              issue                   severity
 -----------------------------------------------------
-productcode           Numérico contaminado   CRITICAL
+productcode     Numérico contaminado         CRITICAL
 device.information    Alta cardinalidade     WARNING
 
 
