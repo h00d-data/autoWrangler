@@ -61,6 +61,35 @@ run_wrangling(
 
 -> Ideal para pipelines de produção.
 
+---
+
+## No GIT:
+
+git init
+git add .
+git commit -m "Initial version of autoWrangler"
+
+# Como rodar :
+
+setwd("caminho/onde/esta/o/pacote")
+
+devtools::load_all("autoWrangler")
+
+run_wrangling(
+  "C:/Users/David/Documents/cybersecurity_attacks_data.csv",
+  ignored_columns = c("device.information")
+)
+
+## Nunca faça : 
+source("cybersecurity_attacks_data.csv") ❌
+
+## Teste rápido:
+run_wrangling(
+  system.file("extdata", "example.csv", package = "autoWrangler")
+)
+
+---
+
 ## 📌 Boas práticas:
 
 ❌ Nunca use source() em arquivos .csv
