@@ -92,10 +92,12 @@ run_wrangling(
 
 ## 📌 Boas práticas:
 
+```
 -❌ Nunca use source() em arquivos .csv
 -✅ CSVs devem ser passados como caminho de arquivo
 -✅ Use ignored_columns para ajustes manuais
 -✅ Use stop_on_critical = TRUE em produção
+```
 
 
 
