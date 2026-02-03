@@ -64,13 +64,14 @@ run_wrangling(
 ---
 
 ## No GIT:
-
+```
 git init
 git add .
 git commit -m "Initial version of autoWrangler"
+```
 
 # Como rodar :
-
+```
 setwd("caminho/onde/esta/o/pacote")
 
 devtools::load_all("autoWrangler")
@@ -82,7 +83,7 @@ run_wrangling(
 
 ## Nunca faça : 
 source("cybersecurity_attacks_data.csv") ❌
----
+```
 
 ## 📌 Boas práticas:
 
